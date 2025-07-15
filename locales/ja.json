@@ -1,0 +1,85 @@
+{
+  "language": "日本語",
+  "ui": {
+    "title": "スマートブックマークマネージャー",
+    "tabs": {
+      "organize": "整理",
+      "settings": "設定"
+    },
+    "actions": {
+      "scanBookmarks": "ブックマークをスキャン",
+      "organizeBookmarks": "整理を適用",
+      "saveSettings": "設定を保存",
+      "testConnection": "API接続をテスト"
+    },
+    "progress": {
+      "scanning": "ブックマークをスキャン中...",
+      "getting": "ブックマークを取得中...",
+      "checking": "チェック中",
+      "complete": "分析完了！"
+    },
+    "stats": {
+      "total": "合計",
+      "accessible": "アクセス可能",
+      "broken": "破損"
+    },
+    "sections": {
+      "suggestedOrganization": "提案された整理方法",
+      "brokenBookmarks": "破損したブックマーク（削除されます）",
+      "noBrokenBookmarks": "破損したブックマークは見つかりませんでした！🎉"
+    },
+    "settings": {
+      "llmApiSettings": "LLM API設定",
+      "organizationSettings": "整理設定",
+      "uiSettings": "UI設定",
+      "apiBaseUrl": "APIベースURL",
+      "apiKey": "APIキー",
+      "modelName": "モデル名",
+      "enableLLMAnalysis": "LLMを使った分析を有効にする",
+      "autoRemoveBroken": "破損したブックマークを自動削除",
+      "createFolders": "カテゴリフォルダーを作成",
+      "language": "言語",
+      "placeholders": {
+        "apiBaseUrl": "https://api.openai.com/v1",
+        "apiKey": "APIキーを入力してください",
+        "modelName": "gpt-3.5-turbo"
+      },
+      "descriptions": {
+        "apiBaseUrl": "OpenAI互換のAPIエンドポイント（例：https://api.openai.com/v1）",
+        "apiKey": "強化された分類のためのLLM APIキー",
+        "modelName": "分類に使用するモデル（例：gpt-3.5-turbo, gpt-4など）",
+        "enableLLMAnalysis": "チェックを外すとドメインベースの分類のみを使用"
+      }
+    },
+    "categories": {
+      "Development": "開発",
+      "Entertainment": "エンターテイメント",
+      "Shopping": "ショッピング",
+      "Search/Tools": "検索/ツール",
+      "Social Media": "ソーシャルメディア",
+      "Professional": "プロフェッショナル",
+      "News": "ニュース",
+      "Reference": "参考資料",
+      "Community": "コミュニティ",
+      "Productivity": "生産性",
+      "Education": "教育",
+      "Other": "その他"
+    },
+    "status": {
+      "accessible": "正常",
+      "broken": "破損",
+      "organizing": "整理中...",
+      "saved": "保存しました！",
+      "testing": "テスト中...",
+      "connected": "接続済み！",
+      "failed": "失敗"
+    },
+    "messages": {
+      "confirmOrganization": "これによりブックマークが再整理され、破損したものは削除されます。続行しますか？",
+      "organizationSuccess": "ブックマークの整理が完了しました！",
+      "organizationError": "ブックマークの整理中にエラーが発生しました。もう一度お試しください。",
+      "settingsError": "設定の保存中にエラーが発生しました",
+      "connectionError": "API接続に失敗しました："
+    }
+  }
+}

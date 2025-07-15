@@ -1,0 +1,85 @@
+{
+  "language": "简体中文",
+  "ui": {
+    "title": "智能书签管理器",
+    "tabs": {
+      "organize": "整理",
+      "settings": "设置"
+    },
+    "actions": {
+      "scanBookmarks": "扫描书签",
+      "organizeBookmarks": "应用整理",
+      "saveSettings": "保存设置",
+      "testConnection": "测试API连接"
+    },
+    "progress": {
+      "scanning": "正在扫描书签...",
+      "getting": "正在获取书签...",
+      "checking": "正在检查",
+      "complete": "分析完成！"
+    },
+    "stats": {
+      "total": "总计",
+      "accessible": "可访问",
+      "broken": "损坏"
+    },
+    "sections": {
+      "suggestedOrganization": "建议整理方案",
+      "brokenBookmarks": "损坏的书签（将被移除）",
+      "noBrokenBookmarks": "未发现损坏的书签！🎉"
+    },
+    "settings": {
+      "llmApiSettings": "LLM API 设置",
+      "organizationSettings": "整理设置",
+      "uiSettings": "界面设置",
+      "apiBaseUrl": "API 基础 URL",
+      "apiKey": "API 密钥",
+      "modelName": "模型名称",
+      "enableLLMAnalysis": "启用 LLM 智能分析",
+      "autoRemoveBroken": "自动移除损坏的书签",
+      "createFolders": "创建分类文件夹",
+      "language": "语言",
+      "placeholders": {
+        "apiBaseUrl": "https://api.openai.com/v1",
+        "apiKey": "请输入您的 API 密钥",
+        "modelName": "gpt-3.5-turbo"
+      },
+      "descriptions": {
+        "apiBaseUrl": "OpenAI 兼容的 API 端点（例如：https://api.openai.com/v1）",
+        "apiKey": "用于增强分类的 LLM API 密钥",
+        "modelName": "用于分类的模型（例如：gpt-3.5-turbo, gpt-4 等）",
+        "enableLLMAnalysis": "取消勾选以仅使用基于域名的分类"
+      }
+    },
+    "categories": {
+      "Development": "开发",
+      "Entertainment": "娱乐",
+      "Shopping": "购物",
+      "Search/Tools": "搜索/工具",
+      "Social Media": "社交媒体",
+      "Professional": "职业",
+      "News": "新闻",
+      "Reference": "参考",
+      "Community": "社区",
+      "Productivity": "生产力",
+      "Education": "教育",
+      "Other": "其他"
+    },
+    "status": {
+      "accessible": "正常",
+      "broken": "损坏",
+      "organizing": "整理中...",
+      "saved": "已保存！",
+      "testing": "测试中...",
+      "connected": "已连接！",
+      "failed": "失败"
+    },
+    "messages": {
+      "confirmOrganization": "这将重新整理您的书签并移除损坏的书签。是否继续？",
+      "organizationSuccess": "书签整理成功！",
+      "organizationError": "整理书签时出错。请重试。",
+      "settingsError": "保存设置时出错",
+      "connectionError": "API 连接失败："
+    }
+  }
+}

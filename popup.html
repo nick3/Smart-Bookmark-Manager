@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="ui.title">Smart Bookmark Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 data-i18n="ui.title">🔖 Smart Bookmark Manager</h1>
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="organize" data-i18n="ui.tabs.organize">Organize</button>
+                <button class="tab-btn" data-tab="settings" data-i18n="ui.tabs.settings">Settings</button>
+            </div>
+        </header>
+
+        <div class="tab-content" id="organize-tab">
+            <div class="section">
+                <div class="action-bar">
+                    <button id="scanBookmarks" class="btn btn-primary">
+                        <span class="btn-icon">🔍</span>
+                        <span data-i18n="ui.actions.scanBookmarks">Scan Bookmarks</span>
+                    </button>
+                    <button id="organizeBookmarks" class="btn btn-success" disabled>
+                        <span class="btn-icon">📁</span>
+                        <span data-i18n="ui.actions.organizeBookmarks">Apply Organization</span>
+                    </button>
+                </div>
+
+                <div id="progress-section" class="progress-section hidden">
+                    <div class="progress-bar">
+                        <div class="progress-fill"></div>
+                    </div>
+                    <div class="progress-text" data-i18n="ui.progress.scanning">Scanning bookmarks...</div>
+                </div>
+
+                <div id="results-section" class="results-section hidden">
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="stat-number" id="totalBookmarks">0</span>
+                            <span class="stat-label" data-i18n="ui.stats.total">Total</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" id="accessibleBookmarks">0</span>
+                            <span class="stat-label" data-i18n="ui.stats.accessible">Accessible</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" id="inaccessibleBookmarks">0</span>
+                            <span class="stat-label" data-i18n="ui.stats.broken">Broken</span>
+                        </div>
+                    </div>
+
+                    <div class="categories-container">
+                        <h3 data-i18n="ui.sections.suggestedOrganization">Suggested Organization</h3>
+                        <div id="categorizedBookmarks"></div>
+                    </div>
+
+                    <div class="broken-bookmarks-section">
+                        <h3 data-i18n="ui.sections.brokenBookmarks">Broken Bookmarks (will be removed)</h3>
+                        <div id="brokenBookmarks"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-content hidden" id="settings-tab">
+            <div class="settings-section">
+                <h3 data-i18n="ui.settings.llmApiSettings">LLM API Settings</h3>
+                <div class="setting-item">
+                    <label for="apiBaseUrl" data-i18n="ui.settings.apiBaseUrl">API Base URL</label>
+                    <input type="text" id="apiBaseUrl" data-i18n-placeholder="ui.settings.placeholders.apiBaseUrl" value="https://api.openai.com/v1">
+                    <small data-i18n="ui.settings.descriptions.apiBaseUrl">OpenAI-compatible API endpoint (e.g., https://api.openai.com/v1)</small>
+                </div>
+
+                <div class="setting-item">
+                    <label for="apiKey" data-i18n="ui.settings.apiKey">API Key</label>
+                    <input type="password" id="apiKey" data-i18n-placeholder="ui.settings.placeholders.apiKey">
+                    <small data-i18n="ui.settings.descriptions.apiKey">Your LLM API key for enhanced categorization</small>
+                </div>
+
+                <div class="setting-item">
+                    <label for="modelName" data-i18n="ui.settings.modelName">Model Name</label>
+                    <input type="text" id="modelName" data-i18n-placeholder="ui.settings.placeholders.modelName" value="gpt-3.5-turbo">
+                    <small data-i18n="ui.settings.descriptions.modelName">Model to use for categorization (e.g., gpt-3.5-turbo, gpt-4, etc.)</small>
+                </div>
+
+                <div class="setting-item">
+                    <label>
+                        <input type="checkbox" id="enableLLMAnalysis" checked>
+                        <span data-i18n="ui.settings.enableLLMAnalysis">Enable LLM-powered analysis</span>
+                    </label>
+                    <small data-i18n="ui.settings.descriptions.enableLLMAnalysis">Uncheck to use basic domain-based categorization only</small>
+                </div>
+
+                <div class="setting-item">
+                    <button id="testConnection" class="btn btn-secondary" data-i18n="ui.actions.testConnection">Test API Connection</button>
+                </div>
+                
+                <h3 data-i18n="ui.settings.organizationSettings">Organization Settings</h3>
+                <div class="setting-item">
+                    <label>
+                        <input type="checkbox" id="autoRemoveBroken" checked>
+                        <span data-i18n="ui.settings.autoRemoveBroken">Automatically remove broken bookmarks</span>
+                    </label>
+                </div>
+                
+                <div class="setting-item">
+                    <label>
+                        <input type="checkbox" id="createFolders" checked>
+                        <span data-i18n="ui.settings.createFolders">Create category folders</span>
+                    </label>
+                </div>
+
+                <h3 data-i18n="ui.settings.uiSettings">UI Settings</h3>
+                <div class="setting-item">
+                    <label for="languageSelect" data-i18n="ui.settings.language">Language</label>
+                    <select id="languageSelect"></select>
+                </div>
+
+                <button id="saveSettings" class="btn btn-primary" data-i18n="ui.actions.saveSettings">Save Settings</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="i18n.js"></script>
+    <script src="popup.js"></script>
+</body>
+</html>

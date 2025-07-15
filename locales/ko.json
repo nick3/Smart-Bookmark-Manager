@@ -1,0 +1,85 @@
+{
+  "language": "한국어",
+  "ui": {
+    "title": "스마트 북마크 관리자",
+    "tabs": {
+      "organize": "정리",
+      "settings": "설정"
+    },
+    "actions": {
+      "scanBookmarks": "북마크 스캔",
+      "organizeBookmarks": "정리 적용",
+      "saveSettings": "설정 저장",
+      "testConnection": "API 연결 테스트"
+    },
+    "progress": {
+      "scanning": "북마크 스캔 중...",
+      "getting": "북마크 가져오는 중...",
+      "checking": "확인 중",
+      "complete": "분석 완료!"
+    },
+    "stats": {
+      "total": "전체",
+      "accessible": "접근 가능",
+      "broken": "손상됨"
+    },
+    "sections": {
+      "suggestedOrganization": "제안된 정리 방법",
+      "brokenBookmarks": "손상된 북마크 (제거됨)",
+      "noBrokenBookmarks": "손상된 북마크가 없습니다! 🎉"
+    },
+    "settings": {
+      "llmApiSettings": "LLM API 설정",
+      "organizationSettings": "정리 설정",
+      "uiSettings": "UI 설정",
+      "apiBaseUrl": "API 기본 URL",
+      "apiKey": "API 키",
+      "modelName": "모델 이름",
+      "enableLLMAnalysis": "LLM 기반 분석 사용",
+      "autoRemoveBroken": "손상된 북마크 자동 제거",
+      "createFolders": "카테고리 폴더 생성",
+      "language": "언어",
+      "placeholders": {
+        "apiBaseUrl": "https://api.openai.com/v1",
+        "apiKey": "API 키를 입력하세요",
+        "modelName": "gpt-3.5-turbo"
+      },
+      "descriptions": {
+        "apiBaseUrl": "OpenAI 호환 API 엔드포인트 (예: https://api.openai.com/v1)",
+        "apiKey": "향상된 분류를 위한 LLM API 키",
+        "modelName": "분류에 사용할 모델 (예: gpt-3.5-turbo, gpt-4 등)",
+        "enableLLMAnalysis": "체크 해제시 도메인 기반 분류만 사용"
+      }
+    },
+    "categories": {
+      "Development": "개발",
+      "Entertainment": "엔터테인먼트",
+      "Shopping": "쇼핑",
+      "Search/Tools": "검색/도구",
+      "Social Media": "소셜 미디어",
+      "Professional": "전문",
+      "News": "뉴스",
+      "Reference": "참고자료",
+      "Community": "커뮤니티",
+      "Productivity": "생산성",
+      "Education": "교육",
+      "Other": "기타"
+    },
+    "status": {
+      "accessible": "정상",
+      "broken": "손상됨",
+      "organizing": "정리 중...",
+      "saved": "저장됨!",
+      "testing": "테스트 중...",
+      "connected": "연결됨!",
+      "failed": "실패"
+    },
+    "messages": {
+      "confirmOrganization": "북마크를 재정리하고 손상된 북마크를 제거합니다. 계속하시겠습니까?",
+      "organizationSuccess": "북마크 정리가 완료되었습니다!",
+      "organizationError": "북마크 정리 중 오류가 발생했습니다. 다시 시도해주세요.",
+      "settingsError": "설정 저장 중 오류 발생",
+      "connectionError": "API 연결 실패:"
+    }
+  }
+}

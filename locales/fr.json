@@ -1,0 +1,85 @@
+{
+  "language": "Français",
+  "ui": {
+    "title": "Gestionnaire de Signets Intelligent",
+    "tabs": {
+      "organize": "Organiser",
+      "settings": "Paramètres"
+    },
+    "actions": {
+      "scanBookmarks": "Scanner les Signets",
+      "organizeBookmarks": "Appliquer l'Organisation",
+      "saveSettings": "Enregistrer les Paramètres",
+      "testConnection": "Tester la Connexion API"
+    },
+    "progress": {
+      "scanning": "Scan des signets en cours...",
+      "getting": "Récupération des signets...",
+      "checking": "Vérification",
+      "complete": "Analyse terminée !"
+    },
+    "stats": {
+      "total": "Total",
+      "accessible": "Accessible",
+      "broken": "Cassé"
+    },
+    "sections": {
+      "suggestedOrganization": "Organisation Suggérée",
+      "brokenBookmarks": "Signets Cassés (seront supprimés)",
+      "noBrokenBookmarks": "Aucun signet cassé trouvé ! 🎉"
+    },
+    "settings": {
+      "llmApiSettings": "Paramètres API LLM",
+      "organizationSettings": "Paramètres d'Organisation",
+      "uiSettings": "Paramètres Interface",
+      "apiBaseUrl": "URL de Base API",
+      "apiKey": "Clé API",
+      "modelName": "Nom du Modèle",
+      "enableLLMAnalysis": "Activer l'analyse basée sur LLM",
+      "autoRemoveBroken": "Supprimer automatiquement les signets cassés",
+      "createFolders": "Créer des dossiers de catégorie",
+      "language": "Langue",
+      "placeholders": {
+        "apiBaseUrl": "https://api.openai.com/v1",
+        "apiKey": "Entrez votre clé API",
+        "modelName": "gpt-3.5-turbo"
+      },
+      "descriptions": {
+        "apiBaseUrl": "Point de terminaison API compatible OpenAI (ex: https://api.openai.com/v1)",
+        "apiKey": "Votre clé API LLM pour une catégorisation améliorée",
+        "modelName": "Modèle à utiliser pour la catégorisation (ex: gpt-3.5-turbo, gpt-4, etc.)",
+        "enableLLMAnalysis": "Décocher pour utiliser uniquement la catégorisation basée sur le domaine"
+      }
+    },
+    "categories": {
+      "Development": "Développement",
+      "Entertainment": "Divertissement",
+      "Shopping": "Shopping",
+      "Search/Tools": "Recherche/Outils",
+      "Social Media": "Médias Sociaux",
+      "Professional": "Professionnel",
+      "News": "Actualités",
+      "Reference": "Référence",
+      "Community": "Communauté",
+      "Productivity": "Productivité",
+      "Education": "Éducation",
+      "Other": "Autre"
+    },
+    "status": {
+      "accessible": "OK",
+      "broken": "Cassé",
+      "organizing": "Organisation...",
+      "saved": "Enregistré !",
+      "testing": "Test...",
+      "connected": "Connecté !",
+      "failed": "Échec"
+    },
+    "messages": {
+      "confirmOrganization": "Ceci va réorganiser vos signets et supprimer ceux qui sont cassés. Continuer ?",
+      "organizationSuccess": "Signets organisés avec succès !",
+      "organizationError": "Erreur lors de l'organisation des signets. Veuillez réessayer.",
+      "settingsError": "Erreur lors de l'enregistrement des paramètres",
+      "connectionError": "Échec de la connexion API :"
+    }
+  }
+}

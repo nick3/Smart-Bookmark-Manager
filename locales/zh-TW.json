@@ -1,0 +1,85 @@
+{
+  "language": "繁體中文",
+  "ui": {
+    "title": "智能書籤管理器",
+    "tabs": {
+      "organize": "整理",
+      "settings": "設定"
+    },
+    "actions": {
+      "scanBookmarks": "掃描書籤",
+      "organizeBookmarks": "應用整理",
+      "saveSettings": "儲存設定",
+      "testConnection": "測試API連接"
+    },
+    "progress": {
+      "scanning": "正在掃描書籤...",
+      "getting": "正在取得書籤...",
+      "checking": "正在檢查",
+      "complete": "分析完成！"
+    },
+    "stats": {
+      "total": "總計",
+      "accessible": "可存取",
+      "broken": "損壞"
+    },
+    "sections": {
+      "suggestedOrganization": "建議整理方案",
+      "brokenBookmarks": "損壞的書籤（將被移除）",
+      "noBrokenBookmarks": "未發現損壞的書籤！🎉"
+    },
+    "settings": {
+      "llmApiSettings": "LLM API 設定",
+      "organizationSettings": "整理設定",
+      "uiSettings": "介面設定",
+      "apiBaseUrl": "API 基礎 URL",
+      "apiKey": "API 金鑰",
+      "modelName": "模型名稱",
+      "enableLLMAnalysis": "啟用 LLM 智慧分析",
+      "autoRemoveBroken": "自動移除損壞的書籤",
+      "createFolders": "建立分類資料夾",
+      "language": "語言",
+      "placeholders": {
+        "apiBaseUrl": "https://api.openai.com/v1",
+        "apiKey": "請輸入您的 API 金鑰",
+        "modelName": "gpt-3.5-turbo"
+      },
+      "descriptions": {
+        "apiBaseUrl": "OpenAI 相容的 API 端點（例如：https://api.openai.com/v1）",
+        "apiKey": "用於增強分類的 LLM API 金鑰",
+        "modelName": "用於分類的模型（例如：gpt-3.5-turbo, gpt-4 等）",
+        "enableLLMAnalysis": "取消勾選以僅使用基於域名的分類"
+      }
+    },
+    "categories": {
+      "Development": "開發",
+      "Entertainment": "娛樂",
+      "Shopping": "購物",
+      "Search/Tools": "搜尋/工具",
+      "Social Media": "社交媒體",
+      "Professional": "職業",
+      "News": "新聞",
+      "Reference": "參考",
+      "Community": "社群",
+      "Productivity": "生產力",
+      "Education": "教育",
+      "Other": "其他"
+    },
+    "status": {
+      "accessible": "正常",
+      "broken": "損壞",
+      "organizing": "整理中...",
+      "saved": "已儲存！",
+      "testing": "測試中...",
+      "connected": "已連接！",
+      "failed": "失敗"
+    },
+    "messages": {
+      "confirmOrganization": "這將重新整理您的書籤並移除損壞的書籤。是否繼續？",
+      "organizationSuccess": "書籤整理成功！",
+      "organizationError": "整理書籤時出錯。請重試。",
+      "settingsError": "儲存設定時出錯",
+      "connectionError": "API 連接失敗："
+    }
+  }
+}

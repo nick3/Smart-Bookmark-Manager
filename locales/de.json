@@ -1,0 +1,85 @@
+{
+  "language": "Deutsch",
+  "ui": {
+    "title": "Intelligenter Lesezeichen-Manager",
+    "tabs": {
+      "organize": "Organisieren",
+      "settings": "Einstellungen"
+    },
+    "actions": {
+      "scanBookmarks": "Lesezeichen scannen",
+      "organizeBookmarks": "Organisation anwenden",
+      "saveSettings": "Einstellungen speichern",
+      "testConnection": "API-Verbindung testen"
+    },
+    "progress": {
+      "scanning": "Lesezeichen werden gescannt...",
+      "getting": "Lesezeichen werden abgerufen...",
+      "checking": "Überprüfung",
+      "complete": "Analyse abgeschlossen!"
+    },
+    "stats": {
+      "total": "Gesamt",
+      "accessible": "Zugänglich",
+      "broken": "Defekt"
+    },
+    "sections": {
+      "suggestedOrganization": "Vorgeschlagene Organisation",
+      "brokenBookmarks": "Defekte Lesezeichen (werden entfernt)",
+      "noBrokenBookmarks": "Keine defekten Lesezeichen gefunden! 🎉"
+    },
+    "settings": {
+      "llmApiSettings": "LLM-API-Einstellungen",
+      "organizationSettings": "Organisationseinstellungen",
+      "uiSettings": "UI-Einstellungen",
+      "apiBaseUrl": "API-Basis-URL",
+      "apiKey": "API-Schlüssel",
+      "modelName": "Modellname",
+      "enableLLMAnalysis": "LLM-basierte Analyse aktivieren",
+      "autoRemoveBroken": "Defekte Lesezeichen automatisch entfernen",
+      "createFolders": "Kategorieordner erstellen",
+      "language": "Sprache",
+      "placeholders": {
+        "apiBaseUrl": "https://api.openai.com/v1",
+        "apiKey": "Geben Sie Ihren API-Schlüssel ein",
+        "modelName": "gpt-3.5-turbo"
+      },
+      "descriptions": {
+        "apiBaseUrl": "OpenAI-kompatibler API-Endpunkt (z.B. https://api.openai.com/v1)",
+        "apiKey": "Ihr LLM-API-Schlüssel für erweiterte Kategorisierung",
+        "modelName": "Modell für die Kategorisierung (z.B. gpt-3.5-turbo, gpt-4, etc.)",
+        "enableLLMAnalysis": "Deaktivieren, um nur domainbasierte Kategorisierung zu verwenden"
+      }
+    },
+    "categories": {
+      "Development": "Entwicklung",
+      "Entertainment": "Unterhaltung",
+      "Shopping": "Einkaufen",
+      "Search/Tools": "Suche/Tools",
+      "Social Media": "Soziale Medien",
+      "Professional": "Beruflich",
+      "News": "Nachrichten",
+      "Reference": "Referenz",
+      "Community": "Community",
+      "Productivity": "Produktivität",
+      "Education": "Bildung",
+      "Other": "Andere"
+    },
+    "status": {
+      "accessible": "OK",
+      "broken": "Defekt",
+      "organizing": "Organisierung...",
+      "saved": "Gespeichert!",
+      "testing": "Test...",
+      "connected": "Verbunden!",
+      "failed": "Fehlgeschlagen"
+    },
+    "messages": {
+      "confirmOrganization": "Dies wird Ihre Lesezeichen neu organisieren und defekte entfernen. Fortfahren?",
+      "organizationSuccess": "Lesezeichen erfolgreich organisiert!",
+      "organizationError": "Fehler beim Organisieren der Lesezeichen. Bitte versuchen Sie es erneut.",
+      "settingsError": "Fehler beim Speichern der Einstellungen",
+      "connectionError": "API-Verbindung fehlgeschlagen:"
+    }
+  }
+}

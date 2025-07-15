@@ -1,0 +1,85 @@
+{
+  "language": "Español",
+  "ui": {
+    "title": "Gestor de Marcadores Inteligente",
+    "tabs": {
+      "organize": "Organizar",
+      "settings": "Configuración"
+    },
+    "actions": {
+      "scanBookmarks": "Escanear Marcadores",
+      "organizeBookmarks": "Aplicar Organización",
+      "saveSettings": "Guardar Configuración",
+      "testConnection": "Probar Conexión API"
+    },
+    "progress": {
+      "scanning": "Escaneando marcadores...",
+      "getting": "Obteniendo marcadores...",
+      "checking": "Verificando",
+      "complete": "¡Análisis completo!"
+    },
+    "stats": {
+      "total": "Total",
+      "accessible": "Accesible",
+      "broken": "Roto"
+    },
+    "sections": {
+      "suggestedOrganization": "Organización Sugerida",
+      "brokenBookmarks": "Marcadores Rotos (serán eliminados)",
+      "noBrokenBookmarks": "¡No se encontraron marcadores rotos! 🎉"
+    },
+    "settings": {
+      "llmApiSettings": "Configuración API LLM",
+      "organizationSettings": "Configuración de Organización",
+      "uiSettings": "Configuración de Interfaz",
+      "apiBaseUrl": "URL Base API",
+      "apiKey": "Clave API",
+      "modelName": "Nombre del Modelo",
+      "enableLLMAnalysis": "Habilitar análisis basado en LLM",
+      "autoRemoveBroken": "Eliminar automáticamente marcadores rotos",
+      "createFolders": "Crear carpetas de categoría",
+      "language": "Idioma",
+      "placeholders": {
+        "apiBaseUrl": "https://api.openai.com/v1",
+        "apiKey": "Ingrese su clave API",
+        "modelName": "gpt-3.5-turbo"
+      },
+      "descriptions": {
+        "apiBaseUrl": "Endpoint API compatible con OpenAI (ej: https://api.openai.com/v1)",
+        "apiKey": "Su clave API LLM para categorización mejorada",
+        "modelName": "Modelo a usar para categorización (ej: gpt-3.5-turbo, gpt-4, etc.)",
+        "enableLLMAnalysis": "Desmarcar para usar solo categorización basada en dominio"
+      }
+    },
+    "categories": {
+      "Development": "Desarrollo",
+      "Entertainment": "Entretenimiento",
+      "Shopping": "Compras",
+      "Search/Tools": "Búsqueda/Herramientas",
+      "Social Media": "Redes Sociales",
+      "Professional": "Profesional",
+      "News": "Noticias",
+      "Reference": "Referencia",
+      "Community": "Comunidad",
+      "Productivity": "Productividad",
+      "Education": "Educación",
+      "Other": "Otro"
+    },
+    "status": {
+      "accessible": "OK",
+      "broken": "Roto",
+      "organizing": "Organizando...",
+      "saved": "¡Guardado!",
+      "testing": "Probando...",
+      "connected": "¡Conectado!",
+      "failed": "Falló"
+    },
+    "messages": {
+      "confirmOrganization": "Esto reorganizará sus marcadores y eliminará los rotos. ¿Continuar?",
+      "organizationSuccess": "¡Marcadores organizados exitosamente!",
+      "organizationError": "Error al organizar marcadores. Por favor intente nuevamente.",
+      "settingsError": "Error al guardar configuración",
+      "connectionError": "Conexión API falló:"
+    }
+  }
+}

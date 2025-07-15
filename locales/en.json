@@ -1,0 +1,85 @@
+{
+  "language": "English",
+  "ui": {
+    "title": "Smart Bookmark Manager",
+    "tabs": {
+      "organize": "Organize",
+      "settings": "Settings"
+    },
+    "actions": {
+      "scanBookmarks": "Scan Bookmarks",
+      "organizeBookmarks": "Apply Organization",
+      "saveSettings": "Save Settings",
+      "testConnection": "Test API Connection"
+    },
+    "progress": {
+      "scanning": "Scanning bookmarks...",
+      "getting": "Getting bookmarks...",
+      "checking": "Checking",
+      "complete": "Analysis complete!"
+    },
+    "stats": {
+      "total": "Total",
+      "accessible": "Accessible",
+      "broken": "Broken"
+    },
+    "sections": {
+      "suggestedOrganization": "Suggested Organization",
+      "brokenBookmarks": "Broken Bookmarks (will be removed)",
+      "noBrokenBookmarks": "No broken bookmarks found! 🎉"
+    },
+    "settings": {
+      "llmApiSettings": "LLM API Settings",
+      "organizationSettings": "Organization Settings",
+      "uiSettings": "UI Settings",
+      "apiBaseUrl": "API Base URL",
+      "apiKey": "API Key",
+      "modelName": "Model Name",
+      "enableLLMAnalysis": "Enable LLM-powered analysis",
+      "autoRemoveBroken": "Automatically remove broken bookmarks",
+      "createFolders": "Create category folders",
+      "language": "Language",
+      "placeholders": {
+        "apiBaseUrl": "https://api.openai.com/v1",
+        "apiKey": "Enter your API key",
+        "modelName": "gpt-3.5-turbo"
+      },
+      "descriptions": {
+        "apiBaseUrl": "OpenAI-compatible API endpoint (e.g., https://api.openai.com/v1)",
+        "apiKey": "Your LLM API key for enhanced categorization",
+        "modelName": "Model to use for categorization (e.g., gpt-3.5-turbo, gpt-4, etc.)",
+        "enableLLMAnalysis": "Uncheck to use basic domain-based categorization only"
+      }
+    },
+    "categories": {
+      "Development": "Development",
+      "Entertainment": "Entertainment",
+      "Shopping": "Shopping",
+      "Search/Tools": "Search/Tools",
+      "Social Media": "Social Media",
+      "Professional": "Professional",
+      "News": "News",
+      "Reference": "Reference",
+      "Community": "Community",
+      "Productivity": "Productivity",
+      "Education": "Education",
+      "Other": "Other"
+    },
+    "status": {
+      "accessible": "OK",
+      "broken": "Broken",
+      "organizing": "Organizing...",
+      "saved": "Saved!",
+      "testing": "Testing...",
+      "connected": "Connected!",
+      "failed": "Failed"
+    },
+    "messages": {
+      "confirmOrganization": "This will reorganize your bookmarks and remove broken ones. Continue?",
+      "organizationSuccess": "Bookmarks organized successfully!",
+      "organizationError": "Error organizing bookmarks. Please try again.",
+      "settingsError": "Error saving settings",
+      "connectionError": "API connection failed:"
+    }
+  }
+}
